@@ -1,1 +1,0 @@
-print('ricar y sharon')
