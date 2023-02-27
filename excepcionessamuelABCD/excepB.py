@@ -1,10 +1,11 @@
-values = (1, 0)                             # 1) Se determina la variable que en este caso tiene 2 argumentos
-#x,y=19,30
+values = (1, 0) #una tupla que divide 
+#x,y=10,12
 #print(divmod(10,3))
-try:                                        # 2) Se inicia el bloque del codigo para dictar las excepciones
-    q, r = divmod(*values)                  # 3) Se crea otra variable relacionandola con la primera con el uso de la función divmod()
-    #print('q=',q)
-    print(f'q={q}')                         # 4) Se imprime el resultado del parametro q o "cociente" con el metodo de f string
-    print(f'r={r}')                         # 5) Se imprime el resultado del parametro r o "residuo" con el metodo de f string
-except (ZeroDivisionError, TypeError) as e: # 6) Se escribe la excepción con dos tipos de error que seran usados y simplificando a (e)
-    print(type(e), e)                       # 7) Se imprime el mensaje imprimiendo el tipo de dato que es (e) 
+try:
+    q, r = divmod(*values) # q y r son los dividendos = divmod es para dividir, values para coger 
+    #los elementos de la tupla y el *asterisco para separar cada uno de los elementos
+    #print('valor de q=',q)
+    print(f'q={q}')# la f sirve para que la variable se pueda poner dentro de las comillas e imprimir la variable 
+    print(f'r={r}')# la f sirve para que la variable se pueda poner dentro de las comillas e imprimir la variable 
+except (ZeroDivisionError, TypeError) as e:# es para para que las dos excepciones queden asignadas en el alias e
+    print(type(e), e)# ya con type revisa cual de las dos except es y lo imprime 
