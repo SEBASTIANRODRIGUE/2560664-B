@@ -1,11 +1,11 @@
-a ='rd(chr(codepoint))' 
+a ='2' 
 
-b = 'codepoint'
+b = '2'
 
 if a == b:
-    print ('son iguales')
+    print ('son diferentes')
 else:
-    print('son diferentes')    
+    print('son iguales')    
 
 
 

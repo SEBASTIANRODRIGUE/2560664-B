@@ -1,7 +1,4 @@
-print('te gusta sharon')
+print('te gusta python...')
 a=input()
-print('Mmm.',a,'¿en serio?')
+print('Mmm...',a,'¿en serio?')
 
-print("Dime algo...")
-anything = input()
-print("Mmm...", anything, "...¿en serio?")
