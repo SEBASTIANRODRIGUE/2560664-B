@@ -34,7 +34,7 @@ class Empleado:                                  #Este código define una clase 
     def calcular_incremento_ipc(self, ipc):
         if self.salario == 1160000:  # salario mínimo en Colombia en 2023 = 1160000
             incremento = ipc + 0.03  #El método "calcular_incremento_ipc" calcula el incremento de salario en base al incremento del índice de 
-        incremento = 0                #precios  al consumidor (IPC). Si el salario del empleado es 1160000, el incremento se calcula sumando
+                                      #precios  al consumidor (IPC). Si el salario del empleado es 1160000, el incremento se calcula sumando
         else:                         #el 3% y el 13.12% del salario; en caso contrario, se calcula sumando el 13.12% del salario. 
             incremento = ipc
         nuevo_salario = self.salario * (1 + incremento) #1 es la hora de incremento
@@ -46,8 +46,8 @@ class Empleado:                                  #Este código define una clase 
             return "No se puede trabajar más de 2 horas extra diarias."
         else:
             salario_hora = self.calcular_salario_hora()
-            salario_extra = horas_extra * salario_hora * 1.25  # se considera un recargo del 25% por hora extra
-            salario_total = self.salario + salario_extra
+            salario_extra = horas_extra * salario_hora * 1.25  # se considera un recargo del 25% por hora extra de acuerdo al salario salario mínimo 
+            salario_total = self.salario + salario_extra       #salario mínimo en Colombia en 2023
             return salario_total
 
 # ejemplo de uso
