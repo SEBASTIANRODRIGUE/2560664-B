@@ -1,7 +1,7 @@
 
 #modulo del profesor para ingresar al sistema 
 
-class profesor: 
+class profesor: # que define un objeto profesor con tres atributos: nombre, edad y asignaturas. 
     def __init__(self, nombre, edad, asignaturas):
         self.nombre = nombre
         self.edad= edad
@@ -15,3 +15,7 @@ class profesor:
 
         def consultar (self):
             print(f'{self.nombre} esta disponible para consultas')        
+
+
+
+            
